@@ -1,5 +1,6 @@
 import { Goal, Boxes, Keyboard, Eye, Speech, Expand, Box, Figma, Blend, ListChecks, Check, Heart } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function ProcessPage() {
@@ -207,33 +208,39 @@ export default function ProcessPage() {
           </p>
 
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Link href="/?tab=cursor">
-              <Card>
-                <CardHeader>
-                  <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
-                    <Box className="size-6" />
-                  </div>
-                  <CardTitle className="pt-2">Skills for Cursor</CardTitle>
-                  <CardDescription>
-                    Automated accessibility integration for code generation
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card>
+              <CardHeader>
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
+                  <Box className="size-6" />
+                </div>
+                <CardTitle className="pt-2">Skills for Cursor</CardTitle>
+                <CardDescription>
+                  Automated accessibility integration for code generation
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild>
+                  <Link href="/?tab=cursor">View Skills</Link>
+                </Button>
+              </CardContent>
+            </Card>
 
-            <Link href="/?tab=figma">
-              <Card>
-                <CardHeader>
-                  <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
-                    <Figma className="size-6" />
-                  </div>
-                  <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
-                  <CardDescription>
-                    Comprehensive WCAG 2.2 AA reference for prompts
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card>
+              <CardHeader>
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
+                  <Figma className="size-6" />
+                </div>
+                <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
+                <CardDescription>
+                  Comprehensive WCAG 2.2 AA reference for prompts
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild>
+                  <Link href="/?tab=figma">View Guidelines</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
