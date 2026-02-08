@@ -40,8 +40,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${playfair.variable} antialiased`}
       >
+        <a
+          href="#main-content"
+          className="fixed left-0 z-50 -translate-y-full bg-white px-4 py-2 text-sm font-medium text-black underline transition-transform focus:translate-y-0"
+        >
+          Skip to main content
+        </a>
         <Navbar />
-        {children}
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
       </body>
     </html>
   );

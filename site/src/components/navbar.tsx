@@ -6,7 +6,7 @@ import { DoorOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const linkStyles =
-  "relative inline-flex items-center justify-center px-2 py-1 text-sm font-medium whitespace-nowrap transition-all text-white/90 hover:text-white after:absolute after:inset-x-0 after:bottom-[-5px] after:h-0.5 after:bg-white after:opacity-0 after:transition-opacity";
+  "relative inline-flex items-center justify-center px-2 py-1 text-base font-medium whitespace-nowrap transition-all text-white/90 hover:text-white after:absolute after:inset-x-0 after:bottom-[-5px] after:h-0.5 after:bg-white after:opacity-0 after:transition-opacity";
 
 const activeLinkStyles = "text-white after:opacity-100";
 
