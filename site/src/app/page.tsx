@@ -1,12 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Box, Figma, Heart } from "lucide-react";
 import { CursorContent } from "@/components/cursor-content";
 import { FigmaContent } from "@/components/figma-content";
 import { useSearchParams } from "next/navigation";
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   const defaultTab = searchParams.get("tab") === "figma" ? "figma" : "cursor";
   return (
@@ -63,5 +64,13 @@ export default function Home() {
         </footer>
       </div>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense>
+      <HomeContent />
+    </Suspense>
   );
 }
