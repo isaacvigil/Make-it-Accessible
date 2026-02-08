@@ -26,43 +26,6 @@ export default function ProcessPage() {
 
         <section className="mx-auto w-full max-w-3xl px-6 pb-16">
           <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
-            <Route className="size-6" />
-            Our Approach
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            We tested multiple ways to achieve this goal, focusing on
-            benchmarking and validating different approaches.
-          </p>
-
-          <div className="mt-12 grid grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
-                  <Box className="size-6" />
-                </div>
-                <CardTitle className="pt-2">Skills for Cursor</CardTitle>
-                <CardDescription>
-                  Automated accessibility integration for code generation
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
-                  <Figma className="size-6" />
-                </div>
-                <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
-                <CardDescription>
-                  Comprehensive WCAG 2.2 AA reference for prompts
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-3xl px-6 pb-16">
-          <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
             <Boxes className="size-6" />
             Accessibility foundation, the Fantastic 4
           </h2>
@@ -187,6 +150,43 @@ export default function ProcessPage() {
                   </li>
                 </ul>
               </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <section className="mx-auto w-full max-w-3xl px-6 pb-16">
+          <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
+            <Route className="size-6" />
+            Our Approach
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+            We tested multiple ways to achieve this goal, focusing on
+            benchmarking and validating different approaches.
+          </p>
+
+          <div className="mt-12 grid grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <Box className="size-6" />
+                </div>
+                <CardTitle className="pt-2">Skills for Cursor</CardTitle>
+                <CardDescription>
+                  Automated accessibility integration for code generation
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <Figma className="size-6" />
+                </div>
+                <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
+                <CardDescription>
+                  Comprehensive WCAG 2.2 AA reference for prompts
+                </CardDescription>
+              </CardHeader>
             </Card>
           </div>
         </section>
