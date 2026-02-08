@@ -39,6 +39,15 @@ export function Navbar() {
           </Link>
         </li>
         <li>
+          <Link
+            href="/team"
+            className={cn(linkStyles, pathname === "/team" && activeLinkStyles)}
+            aria-current={pathname === "/team" ? "page" : undefined}
+          >
+            Team
+          </Link>
+        </li>
+        <li>
           <a
             href="https://laima-mazeikyte.github.io/Demo-Form/"
             target="_blank"

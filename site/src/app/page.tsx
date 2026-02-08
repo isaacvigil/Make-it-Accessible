@@ -1,6 +1,7 @@
 "use client";
 
 import { Suspense } from "react";
+import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Box, Figma, Heart } from "lucide-react";
 import { CursorContent } from "@/components/cursor-content";
@@ -50,16 +51,15 @@ function HomeContent() {
 
         <footer className="mt-auto w-full border-t py-8 text-center text-sm text-muted-foreground">
           <p className="inline-flex items-center gap-1">
-            Built with <Heart className="size-3 animate-pulse fill-[#7739F3] text-[#7739F3]" aria-label="love" /> by the A11y Team at the{" "}
+            Built with <Heart className="size-3 animate-pulse fill-[#7739F3] text-[#7739F3]" aria-label="love" /> by the <Link href="/team" className="underline underline-offset-4 hover:text-foreground transition-colors">A11y Team</Link> during the{" "}
             <a
               href="https://www.intodesignsystems.com/hackathon"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4 hover:text-foreground transition-colors"
             >
-              IDS Hackathon
-            </a>{" "}
-            · Feb 2026
+              IDS Hackathon (Feb 2026)
+            </a>
           </p>
         </footer>
       </div>
