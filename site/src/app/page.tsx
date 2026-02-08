@@ -13,7 +13,7 @@ export default function Home() {
         style={{ backgroundImage: "url('/hero-bg.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/30" />
-        <h1 className="relative z-10 max-w-md text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        <h1 className="relative z-10 max-w-md text-4xl font-bold tracking-tight text-white sm:text-5xl font-[family-name:var(--font-playfair)] italic">
           Make your vibe code more accessible
         </h1>
         <p className="relative z-10 max-w-md text-lg text-white/80">
