@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Users, Heart } from "lucide-react";
+import { Users, Heart, Globe } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const team = [
@@ -12,30 +12,35 @@ const team = [
     title: "Experience Design & Strategy",
     image: "/team/isaac.jpg",
     linkedin: "https://www.linkedin.com/in/isaacvigil",
+    portfolio: "https://www.isaacvigil.com/",
   },
   {
     name: "Turgut Hatipoglu",
     title: "Product Designer",
     image: "/team/turgut.jpg",
     linkedin: "https://www.linkedin.com/in/turguthatipoglu/",
+    portfolio: "https://www.hatipa.com/",
   },
   {
     name: "Kitty Huang",
     title: "UX/UI Designer · Accessibility & Inclusive Design",
     image: "/team/kitty.jpg",
     linkedin: "https://www.linkedin.com/in/kitty-huang723/",
+    portfolio: "https://kittydesign.myportfolio.com/",
   },
   {
     name: "Laima Mazeikyte",
     title: "Product Designer · Certified Master of UX in E-commerce",
     image: "/team/laima.jpg",
     linkedin: "https://www.linkedin.com/in/laimamazeikyte/",
+    portfolio: "https://laima.design/",
   },
   {
     name: "Ingrid Morancho",
     title: "Product Designer (UX/UI) · Design Systems & Accessibility",
     image: "/team/ingrid.jpg",
     linkedin: "https://www.linkedin.com/in/ingridmorancho/",
+    portfolio: "https://ingridmorancho.framer.website/",
   },
 ];
 
@@ -79,32 +84,40 @@ export default function TeamPage() {
             </a>
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
             {shuffledTeam.map((member) => (
-              <a
-                key={member.name}
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group w-44"
-              >
-                <Card className="flex flex-col overflow-hidden transition-colors group-hover:bg-muted/50 group-focus-visible:ring-2 group-focus-visible:ring-ring group-focus-visible:ring-offset-2 h-full py-0 gap-0">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="w-full aspect-square object-cover"
-                  />
-                  <div className="p-3 flex flex-col flex-1">
-                    <p className="font-semibold text-foreground text-sm">{member.name}</p>
-                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{member.title}</p>
-                    <p className="mt-auto pt-2 text-xs underline underline-offset-2 text-muted-foreground group-hover:text-foreground transition-colors">
+              <Card key={member.name} className="flex flex-col overflow-hidden py-0 gap-0 h-full">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={200}
+                  height={200}
+                  className="w-full aspect-square object-cover"
+                />
+                <div className="p-3 flex flex-col flex-1">
+                  <p className="font-semibold text-foreground text-sm">{member.name}</p>
+                  <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{member.title}</p>
+                  <div className="mt-auto pt-2 flex items-center gap-3">
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground transition-colors"
+                    >
                       LinkedIn
-                    </p>
+                    </a>
+                    <a
+                      href={member.portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      <Globe className="size-3" />
+                      Portfolio
+                    </a>
                   </div>
-                </Card>
-              </a>
+                </div>
+              </Card>
             ))}
           </div>
         </section>
