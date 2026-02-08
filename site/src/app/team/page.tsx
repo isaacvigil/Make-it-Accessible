@@ -1,9 +1,8 @@
 "use client";
 
 import { useMemo } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { Users, Heart, Globe } from "lucide-react";
+import { Users, Globe } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const team = [
@@ -121,20 +120,6 @@ export default function TeamPage() {
             ))}
           </div>
         </section>
-
-        <footer className="mt-auto w-full border-t py-8 text-center text-sm text-muted-foreground">
-          <p className="inline-flex items-center gap-1">
-            Built with <Heart className="size-3 animate-pulse fill-[#7739F3] text-[#7739F3]" aria-label="love" /> by the <Link href="/team" className="underline underline-offset-4 hover:text-foreground transition-colors">A11y Team</Link> at the{" "}
-            <a
-              href="https://www.intodesignsystems.com/hackathon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:text-foreground transition-colors"
-            >
-              IDS Hackathon (Feb 2026)
-            </a>
-          </p>
-        </footer>
       </div>
     </div>
   );
