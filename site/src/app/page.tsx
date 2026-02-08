@@ -17,8 +17,8 @@ export default function Home() {
           Make your vibe code more accessible
         </h1>
         <p className="relative z-10 max-w-md text-lg text-white/80">
-          Accessibility guidelines and patterns for building WCAG 2.2 AA
-          compliant HTML
+          Make UI accessible when vibecoding without having to explicitly
+          describe accessibility rules in the prompt
         </p>
       </header>
 

@@ -1,27 +1,30 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { DoorOpen } from "lucide-react";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function Navbar() {
+  const pathname = usePathname();
+  const activeTab = pathname === "/process" ? "process" : "resources";
+
   return (
     <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4">
       <Link href="/" className="inline-flex items-center gap-2 text-base font-bold tracking-tight text-white font-[family-name:var(--font-inter)]">
         <DoorOpen className="size-5" />
         Make it Accessible
       </Link>
-      <div className="flex items-center gap-6">
-        <Link
-          href="/"
-          className="text-sm font-medium text-white/80 hover:text-white transition-colors"
-        >
-          Resources
-        </Link>
-        <Link
-          href="/process"
-          className="text-sm font-medium text-white/80 hover:text-white transition-colors"
-        >
-          Process
-        </Link>
-      </div>
+      <Tabs value={activeTab}>
+        <TabsList variant="line" className="bg-transparent">
+          <TabsTrigger value="resources" asChild className="text-white/80 hover:text-white data-[state=active]:text-white after:bg-white">
+            <Link href="/">Resources</Link>
+          </TabsTrigger>
+          <TabsTrigger value="process" asChild className="text-white/80 hover:text-white data-[state=active]:text-white after:bg-white">
+            <Link href="/process">Process</Link>
+          </TabsTrigger>
+        </TabsList>
+      </Tabs>
     </nav>
   );
 }
