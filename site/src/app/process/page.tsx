@@ -39,10 +39,10 @@ export default function ProcessPage() {
             accessible experiences.
           </p>
 
-          <div className="mt-4 grid grid-cols-2 gap-6">
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-blue-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <Keyboard className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Keyboard</CardTitle>
@@ -54,15 +54,15 @@ export default function ProcessPage() {
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Tab navigation through all interactive elements
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Visible focus indicators
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Logical tab order
                   </li>
                 </ul>
@@ -71,7 +71,7 @@ export default function ProcessPage() {
 
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-emerald-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <Eye className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Contrast</CardTitle>
@@ -83,15 +83,15 @@ export default function ProcessPage() {
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Normal text: 4.5:1 minimum
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Large text: 3:1 minimum
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     UI components: 3:1 minimum
                   </li>
                 </ul>
@@ -100,7 +100,7 @@ export default function ProcessPage() {
 
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-orange-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <Speech className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Alternative (Alt Text)</CardTitle>
@@ -112,15 +112,15 @@ export default function ProcessPage() {
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-orange-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Descriptive alt text for informative images
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-orange-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Empty alt for decorative images
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-orange-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Accessible labels for all inputs
                   </li>
                 </ul>
@@ -129,7 +129,7 @@ export default function ProcessPage() {
 
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-pink-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <Expand className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Sizing</CardTitle>
@@ -141,15 +141,15 @@ export default function ProcessPage() {
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-pink-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Minimum 44×44px touch targets
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-pink-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Adequate spacing between elements
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-pink-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#7739F3]" />
                     Readable text sizes (16px minimum)
                   </li>
                 </ul>
@@ -167,10 +167,10 @@ export default function ProcessPage() {
             We tested multiple different approaches and assessed accessibility
           </p>
 
-          <div className="mt-4 grid grid-cols-3 gap-6">
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
             <Card className="flex flex-col items-center text-center">
               <CardHeader className="flex flex-col items-center w-full">
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <Speech className="size-6" />
                 </div>
                 <CardTitle className="pt-2 font-normal">VoiceOver screen reader testing</CardTitle>
@@ -179,7 +179,7 @@ export default function ProcessPage() {
 
             <Card className="flex flex-col items-center text-center">
               <CardHeader className="flex flex-col items-center w-full">
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <Keyboard className="size-6" />
                 </div>
                 <CardTitle className="pt-2 font-normal">Keyboard interaction validation</CardTitle>
@@ -188,7 +188,7 @@ export default function ProcessPage() {
 
             <Card className="flex flex-col items-center text-center">
               <CardHeader className="flex flex-col items-center w-full">
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                   <ListChecks className="size-6" />
                 </div>
                 <CardTitle className="pt-2 font-normal">Automated accessibility checkers</CardTitle>
@@ -206,11 +206,11 @@ export default function ProcessPage() {
             We generated a set of rules to be used both in Cursor and Figma Make
           </p>
 
-          <div className="mt-4 grid grid-cols-2 gap-6">
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Link href="/?tab=cursor">
               <Card>
                 <CardHeader>
-                  <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                     <Box className="size-6" />
                   </div>
                   <CardTitle className="pt-2">Skills for Cursor</CardTitle>
@@ -224,7 +224,7 @@ export default function ProcessPage() {
             <Link href="/?tab=figma">
               <Card>
                 <CardHeader>
-                  <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <div className="flex size-12 items-center justify-center rounded-lg bg-[#7739F3] text-white">
                     <Figma className="size-6" />
                   </div>
                   <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
@@ -239,7 +239,7 @@ export default function ProcessPage() {
 
         <footer className="mt-auto w-full border-t py-8 text-center text-sm text-muted-foreground">
           <p className="inline-flex items-center gap-1">
-            Built with <Heart className="size-4 fill-red-500 text-red-500" aria-label="love" /> by the A11y Team at the{" "}
+            Built with <Heart className="size-3 animate-pulse fill-[#7739F3] text-[#7739F3]" aria-label="love" /> by the A11y Team at the{" "}
             <a
               href="https://www.intodesignsystems.com/hackathon"
               target="_blank"

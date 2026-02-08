@@ -18,9 +18,9 @@ function HomeContent() {
       >
         <div className="absolute inset-0 bg-black/30" />
         <h1 className="relative z-10 max-w-md text-4xl font-bold tracking-tight text-white sm:text-5xl font-[family-name:var(--font-playfair)] italic">
-          Make your vibe code more accessible
+          Make your vibe code site accessible
         </h1>
-        <p className="relative z-10 max-w-md text-lg text-white/80">
+        <p className="relative z-10 max-w-md text-lg text-white/90">
           Make accessible websites when vibecoding without having to explicitly
           describe accessibility rules in the prompt
         </p>
@@ -50,7 +50,7 @@ function HomeContent() {
 
         <footer className="mt-auto w-full border-t py-8 text-center text-sm text-muted-foreground">
           <p className="inline-flex items-center gap-1">
-            Built with <Heart className="size-4 fill-red-500 text-red-500" aria-label="love" /> by the A11y Team at the{" "}
+            Built with <Heart className="size-3 animate-pulse fill-[#7739F3] text-[#7739F3]" aria-label="love" /> by the A11y Team at the{" "}
             <a
               href="https://www.intodesignsystems.com/hackathon"
               target="_blank"

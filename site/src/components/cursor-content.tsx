@@ -23,7 +23,12 @@ function CodeBlock({ children }: { children: string }) {
 
   return (
     <div className="relative">
-      <pre className="overflow-x-auto rounded-md border bg-muted p-4 pr-12 text-sm">
+      <pre
+        className="overflow-x-auto rounded-md border bg-muted p-4 pr-12 text-sm focus:outline-2 focus:outline-ring focus:outline-offset-2"
+        tabIndex={0}
+        role="region"
+        aria-label="Installation command"
+      >
         <code>{children}</code>
       </pre>
       <Button
@@ -82,7 +87,7 @@ export function CursorContent() {
             Copy to your project&apos;s <code className="rounded bg-muted px-1.5 py-0.5 text-sm">.cursor/skills/</code> folder:
           </p>
           <CodeBlock>
-            {`git clone https://github.com/Laima-Mazeikyte/accessible-ui-skill.git .cursor/skills/accessible-ui`}
+            {`git clone https://github.com/Laima-Mazeikyte/make-it-accessible-skill.git .cursor/skills/make-it-accessible`}
           </CodeBlock>
         </div>
 
@@ -94,7 +99,7 @@ export function CursorContent() {
             Copy to your global Cursor skills folder:
           </p>
           <CodeBlock>
-            {`git clone https://github.com/Laima-Mazeikyte/accessible-ui-skill.git ~/.cursor/skills/accessible-ui`}
+            {`git clone https://github.com/Laima-Mazeikyte/make-it-accessible-skill.git ~/.cursor/skills/make-it-accessible`}
           </CodeBlock>
         </div>
       </section>

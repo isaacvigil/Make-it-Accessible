@@ -8,7 +8,10 @@ function Table({ className, ...props }: React.ComponentProps<"table">) {
   return (
     <div
       data-slot="table-container"
-      className="relative w-full overflow-x-auto"
+      className="relative w-full overflow-x-auto focus:outline-2 focus:outline-ring focus:outline-offset-2"
+      tabIndex={0}
+      role="region"
+      aria-label="Scrollable table"
     >
       <table
         data-slot="table"
