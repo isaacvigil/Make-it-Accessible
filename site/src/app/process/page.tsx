@@ -1,4 +1,4 @@
-import { Goal, Route, Boxes, Keyboard, Eye, Speech, Expand } from "lucide-react";
+import { Goal, Route, Boxes, Keyboard, Eye, Speech, Expand, Box, Figma } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 export default function ProcessPage() {
@@ -37,8 +37,8 @@ export default function ProcessPage() {
           <div className="mt-12 grid grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-lg font-bold text-white">
-                  C
+                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <Box className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Skills for Cursor</CardTitle>
                 <CardDescription>
@@ -49,8 +49,8 @@ export default function ProcessPage() {
 
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-lg font-bold text-white">
-                  F
+                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <Figma className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
                 <CardDescription>
@@ -64,7 +64,7 @@ export default function ProcessPage() {
         <section className="mx-auto w-full max-w-3xl px-6 pb-16">
           <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
             <Boxes className="size-6" />
-            Accessibility Foundation, the Fantastic 4
+            Accessibility foundation, the Fantastic 4
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             The following principles catch 80% of accessibility issues in
@@ -75,7 +75,7 @@ export default function ProcessPage() {
           <div className="mt-12 grid grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <div className="flex size-12 items-center justify-center rounded-lg bg-emerald-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-blue-500 text-white">
                   <Keyboard className="size-6" />
                 </div>
                 <CardTitle className="pt-2">Keyboard</CardTitle>
@@ -87,15 +87,15 @@ export default function ProcessPage() {
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
                     Tab navigation through all interactive elements
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
                     Visible focus indicators
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
                     Logical tab order
                   </li>
                 </ul>
