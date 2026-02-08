@@ -1,5 +1,6 @@
-import { Goal, Route, Boxes, Keyboard, Eye, Speech, Expand, Box, Figma } from "lucide-react";
+import { Goal, Boxes, Keyboard, Eye, Speech, Expand, Box, Figma, Blend, ListChecks, Check, Heart } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function ProcessPage() {
   return (
@@ -9,6 +10,9 @@ export default function ProcessPage() {
         style={{ backgroundImage: "url('/hero-bg.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/30" />
+        <h1 className="relative z-10 text-4xl font-bold tracking-tight text-white sm:text-5xl font-[family-name:var(--font-playfair)] italic">
+          Process
+        </h1>
       </header>
 
       <div className="relative -mt-6 flex flex-1 flex-col rounded-t-3xl bg-background">
@@ -35,7 +39,7 @@ export default function ProcessPage() {
             accessible experiences.
           </p>
 
-          <div className="mt-12 grid grid-cols-2 gap-6">
+          <div className="mt-4 grid grid-cols-2 gap-6">
             <Card>
               <CardHeader>
                 <div className="flex size-12 items-center justify-center rounded-lg bg-blue-500 text-white">
@@ -156,40 +160,97 @@ export default function ProcessPage() {
 
         <section className="mx-auto w-full max-w-3xl px-6 pb-16">
           <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
-            <Route className="size-6" />
-            Our Approach
+            <Blend className="size-6" />
+            Testing
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            We tested multiple ways to achieve this goal, focusing on
-            benchmarking and validating different approaches.
+            We tested multiple different approaches and assessed accessibility
           </p>
 
-          <div className="mt-12 grid grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
+          <div className="mt-4 grid grid-cols-3 gap-6">
+            <Card className="flex flex-col items-center text-center">
+              <CardHeader className="flex flex-col items-center w-full">
                 <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
-                  <Box className="size-6" />
+                  <Speech className="size-6" />
                 </div>
-                <CardTitle className="pt-2">Skills for Cursor</CardTitle>
-                <CardDescription>
-                  Automated accessibility integration for code generation
-                </CardDescription>
+                <CardTitle className="pt-2 font-normal">VoiceOver screen reader testing</CardTitle>
               </CardHeader>
             </Card>
 
-            <Card>
-              <CardHeader>
+            <Card className="flex flex-col items-center text-center">
+              <CardHeader className="flex flex-col items-center w-full">
                 <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
-                  <Figma className="size-6" />
+                  <Keyboard className="size-6" />
                 </div>
-                <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
-                <CardDescription>
-                  Comprehensive WCAG 2.2 AA reference for prompts
-                </CardDescription>
+                <CardTitle className="pt-2 font-normal">Keyboard interaction validation</CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="flex flex-col items-center text-center">
+              <CardHeader className="flex flex-col items-center w-full">
+                <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                  <ListChecks className="size-6" />
+                </div>
+                <CardTitle className="pt-2 font-normal">Automated accessibility checkers</CardTitle>
               </CardHeader>
             </Card>
           </div>
         </section>
+
+        <section className="mx-auto w-full max-w-3xl px-6 pb-16">
+          <h2 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
+            <Check className="size-6" />
+            Results
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+            We generated a set of rules to be used both in Cursor and Figma Make
+          </p>
+
+          <div className="mt-4 grid grid-cols-2 gap-6">
+            <Link href="/?tab=cursor">
+              <Card>
+                <CardHeader>
+                  <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                    <Box className="size-6" />
+                  </div>
+                  <CardTitle className="pt-2">Skills for Cursor</CardTitle>
+                  <CardDescription>
+                    Automated accessibility integration for code generation
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+
+            <Link href="/?tab=figma">
+              <Card>
+                <CardHeader>
+                  <div className="flex size-12 items-center justify-center rounded-lg bg-violet-600 text-white">
+                    <Figma className="size-6" />
+                  </div>
+                  <CardTitle className="pt-2">Guidelines for Figma Make</CardTitle>
+                  <CardDescription>
+                    Comprehensive WCAG 2.2 AA reference for prompts
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+          </div>
+        </section>
+
+        <footer className="mt-auto w-full border-t py-8 text-center text-sm text-muted-foreground">
+          <p className="inline-flex items-center gap-1">
+            Built with <Heart className="size-4 fill-red-500 text-red-500" aria-label="love" /> by the A11y Team at the{" "}
+            <a
+              href="https://www.intodesignsystems.com/hackathon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 hover:text-foreground transition-colors"
+            >
+              IDS Hackathon
+            </a>{" "}
+            · Feb 2026
+          </p>
+        </footer>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function Navbar() {
   const pathname = usePathname();
-  const activeTab = pathname === "/process" ? "process" : "resources";
+  const activeTab = pathname === "/process" ? "process" : pathname === "/demo" ? "demo" : "resources";
 
   return (
     <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4">
@@ -22,6 +22,9 @@ export function Navbar() {
           </TabsTrigger>
           <TabsTrigger value="process" asChild className="text-white/80 hover:text-white data-[state=active]:text-white after:bg-white">
             <Link href="/process">Process</Link>
+          </TabsTrigger>
+          <TabsTrigger value="demo" asChild className="text-white/80 hover:text-white data-[state=active]:text-white after:bg-white">
+            <a href="https://laima-mazeikyte.github.io/Demo-Form/" target="_blank" rel="noopener noreferrer">Demo</a>
           </TabsTrigger>
         </TabsList>
       </Tabs>

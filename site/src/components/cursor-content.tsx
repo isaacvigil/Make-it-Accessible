@@ -48,7 +48,7 @@ export function CursorContent() {
     <article className="prose prose-neutral dark:prose-invert mx-auto w-full max-w-3xl space-y-8 px-6 py-12">
       <div className="space-y-2">
         <h2 className="text-2xl font-bold tracking-tight">
-          Accessible UI - Cursor Skill
+          Accessible UI · Cursor Skill
         </h2>
         <p className="text-lg text-muted-foreground">
           A Cursor IDE skill that provides accessibility guidelines and patterns
